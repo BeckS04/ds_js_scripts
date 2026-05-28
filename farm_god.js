@@ -462,9 +462,11 @@ window.FarmGod.Main = (function (Library, Translation) {
           $('.optionButton')
             .off('click')
             .on('click', () => {
-              let optionGroup = 26592;
-              let optionDistance = 17;
-              let optionTime = 1;
+              let optionGroup = parseInt($('.optionGroup').val());
+              let optionDistance = parseFloat(
+                $('.optionDistance').val()
+              );
+              let optionTime = parseFloat($('.optionTime').val());
               let optionLosses =
                 $('.optionLosses').prop('checked');
               let optionMaxloot =
@@ -566,9 +568,9 @@ window.FarmGod.Main = (function (Library, Translation) {
 
   const buildOptions = function () {
     let options = JSON.parse(localStorage.getItem('farmGod_options')) || {
-      optionGroup: 26592,
-      optionDistance: 17,
-      optionTime: 1,
+      optionGroup: 0,
+      optionDistance: 25,
+      optionTime: 10,
       optionLosses: false,
       optionMaxloot: true,
       optionNewbarbs: true,
@@ -597,13 +599,11 @@ window.FarmGod.Main = (function (Library, Translation) {
             : ``
           }
                 <div style="width:90%;margin:auto;background: url(\'graphic/index/main_bg.jpg\') 100% 0% #E3D5B3;border: 1px solid #7D510F;border-collapse: separate !important;border-spacing: 0px !important;"><table class="vis" style="width:100%;text-align:left;font-size:11px;">
-                  <tr><td>${t.options.group}</td><td>${groupSelect}</td></tr>
+                  <tr><td>${t.options.group}</td><td>"26592"}</td></tr>
                   <tr><td>${t.options.distance
-          }</td><td><input type="text" size="5" class="optionDistance" value="${options.optionDistance
-          }"></td></tr>
+          }</td><td><input type="text" size="5" class="optionDistance" value="17"></td></tr>
                   <tr><td>${t.options.time
-          }</td><td><input type="text" size="5" class="optionTime" value="${options.optionTime
-          }"></td></tr>
+          }</td><td><input type="text" size="5" class="optionTime" value="1"></td></tr>
                   <tr><td>${t.options.losses
           }</td><td><input type="checkbox" class="optionLosses" ${options.optionLosses ? 'checked' : ''
           }></td></tr>
