@@ -601,11 +601,9 @@ window.FarmGod.Main = (function (Library, Translation) {
                 <div style="width:90%;margin:auto;background: url(\'graphic/index/main_bg.jpg\') 100% 0% #E3D5B3;border: 1px solid #7D510F;border-collapse: separate !important;border-spacing: 0px !important;"><table class="vis" style="width:100%;text-align:left;font-size:11px;">
                   <tr><td>${t.options.group}</td><td>${groupSelect}</td></tr>
                   <tr><td>${t.options.distance
-          }</td><td><input type="text" size="5" class="optionDistance" value="${options.optionDistance
-          }"></td></tr>
+          }</td><td><input type="text" size="5" class="optionDistance" value="17"></td></tr>
                   <tr><td>${t.options.time
-          }</td><td><input type="text" size="5" class="optionTime" value="${options.optionTime
-          }"></td></tr>
+          }</td><td><input type="text" size="5" class="optionTime" value="1"></td></tr>
                   <tr><td>${t.options.losses
           }</td><td><input type="checkbox" class="optionLosses" ${options.optionLosses ? 'checked' : ''
           }></td></tr>
