@@ -462,11 +462,9 @@ window.FarmGod.Main = (function (Library, Translation) {
           $('.optionButton')
             .off('click')
             .on('click', () => {
-              let optionGroup = parseInt($('.optionGroup').val());
-              let optionDistance = parseFloat(
-                $('.optionDistance').val()
-              );
-              let optionTime = parseFloat($('.optionTime').val());
+              let optionGroup = 26592;
+              let optionDistance = 17;
+              let optionTime = 1;
               let optionLosses =
                 $('.optionLosses').prop('checked');
               let optionMaxloot =
