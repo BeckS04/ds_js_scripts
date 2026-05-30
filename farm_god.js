@@ -599,7 +599,7 @@ window.FarmGod.Main = (function (Library, Translation) {
             : ``
           }
                 <div style="width:90%;margin:auto;background: url(\'graphic/index/main_bg.jpg\') 100% 0% #E3D5B3;border: 1px solid #7D510F;border-collapse: separate !important;border-spacing: 0px !important;"><table class="vis" style="width:100%;text-align:left;font-size:11px;">
-                  <tr><td>${t.options.group}</td><td>"26592"}</td></tr>
+                  <tr><td>${t.options.group}</td><td>"26592"</td></tr>
                   <tr><td>${t.options.distance
           }</td><td><input type="text" size="5" class="optionDistance" value="17"></td></tr>
                   <tr><td>${t.options.time
